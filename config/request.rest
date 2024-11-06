@@ -1,0 +1,41 @@
+   POST http://localhost:4000/api/mahasiswa
+Content-Type: application/json
+
+{
+    "npm": "1234578",
+    "nama": "John Doe",
+    "kelas": "Kelas A"
+}
+###
+
+     get http://localhost:4000/api/mahasiswa/
+
+    {
+    "npm": "1234",
+    "nama": "John Doe",
+    "kelas": "Kelas A"
+}
+
+
+###
+
+     get http://localhost:4000/api/mahasiswa/
+
+    {
+    "npm": "1234",
+    "nama": "John Doe",
+    "kelas": "Kelas A"
+}
+
+###
+delete http://localhost:4000/api/mahasiswa/1
+
+    {
+    "npm": "1234",
+    "nama": "John Doe",
+    "kelas": "Kelas A"
+}
+
+###
+   curl -X PUT http://localhost:4000/api/mahasiswa/1 -H "Content-Type: application/json" -d '{"npm": "123456789", "nama": "John Doe", "kelas": "Kelas A"}'
+    
